@@ -33,7 +33,7 @@
 
 </head>
 
-<body id="page-top" onload="reviewingVis('reviewing.json'); getPublicationsAuthor('grégoire-grzeczkowicz');">
+<body id="page-top" onload="reviewingVis('reviewing.json'); getPublicationsAuthor('ggrzeczkowicz');">
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <select class="selectpicker" data-width="fit">
@@ -74,14 +74,15 @@
           <a class="nav-link js-scroll-trigger lang-en" href="#education">Education</a>
           <a class="nav-link js-scroll-trigger lang-fr" href="#education">Formation</a>
         </li>
+        !-->
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger lang-en" href="#publications">Publications</a>
-          <a class="nav-link js-scroll-trigger lang-fr" href="#publications">Publications</a>
+          <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger lang-en" href="#projects">Projects</a>
           <a class="nav-link js-scroll-trigger lang-fr" href="#projects">Projets</a>
         </li>
+        <!--
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger lang-en" href="#other">Other research activities</a>
           <a class="nav-link js-scroll-trigger lang-fr" href="#other">Autres activités de recherche</a>
@@ -102,11 +103,14 @@
           <a>Greg<!--anti@spam.fr!-->oire.Grzeczkowicz@ign.fr</a>
         </div>
         <p class="lead mb-5 lang-en">PhD Student. Semi supervised 3D reconstruction of city models.</p>
-        <p class="lead mb-5 lang-en">Member of the <a href="">ACTE</a> research team</p>
         <p class="lead mb-5 lang-fr">Doctorant. Reconstruction 3D de modèles de villes semi supervisée.</p>
+        <p class="lead mb-5 lang-en">Member of the <a href="">ACTE</a> research team</p>
         <p class="lead mb-5 lang-fr">Membre de l'équipe <a href="">ACTE</a></p>
         <div class="social-icons">
-          <a href="#">
+          <a class="lang-en" href="https://fr.linkedin.com/in/ggrzeczkowicz">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a class="lang-fr" href="https://www.linkedin.com/in/ggrzeczkowicz">
             <i class="fab fa-linkedin-in"></i>
           </a>
           <a href="https://github.com/ggrzeczkowicz">
@@ -125,13 +129,13 @@
           <a href="#">
             <i class="ai ai-publons"></i>
           </a>
-          <a href="#">
+          !-->
+          <a href="https://orcid.org/0000-0003-2913-2608">
             <i class="ai ai-orcid"></i>
           </a>
-          <a href="#">
+          <a href="https://hal.archives-ouvertes.fr/search?authIdHal_s=ggrzeczkowicz&q=*">
             <i class="ai"><img src="img/icons/hal-b2.svg" width=45px/></i>
           </a>
-          !-->
         </div>
       </div>
     </section>
@@ -472,6 +476,7 @@
         </div>
       </div>
     </section>
+    !-->
 
     <hr class="m-0">
 
@@ -493,16 +498,15 @@
         <span id="pubINV"><div class="subheading mb-3 mt-3">[INV] Invited Talks</div></span>
         <span id="pubPV"><div class="subheading mb-3 mt-3">[PV] Popularization</div></span>
 
-        -->
         <!-- provide a subset of the publications based on a keyword -->
         <!--
         <span id="pubGeneralisation"><div class="subheading mb-3 mt-3">Généralisation</div></span>
-	<script> getKeywordPublicationsAuthorStartYear('guillaume-touya', 'Généralisation', 2006, "pubGeneralisation"); </script>
+        <script> getKeywordPublicationsAuthorStartYear('ggrzeczkowicz', 'Généralisation', 2006, "pubGeneralisation"); </script>
         -->
-        <!--
       </div>
     </section>
 
+    <!--
     <section class="section appear clearfix p-3 p-lg-5">
       <div class="w-100">
         <h2 class="mb-5 mt-5">Invited Talks</h2>
@@ -510,41 +514,31 @@
         </ol>
       </div>
     </section>
+    !-->
 
     <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
       <div class="container">
         <div class="row text-center title">
-          <h2>Projects</h2>
+          <h2 class="lang-en">Projects</h2>
+          <h2 class="lang-fr">Projets</h2>
         </div>
-        <div class="subheading mb-3">On-going and past research projects</div>
+        <div class="subheading mb-3 lang-en">On-going and past research projects</div>
+        <div class="subheading mb-3 lang-fr">Projets en cours</div>
         <div class="row projects">
           <div class="col-md-4">
             <div class="project">
               <div class="icon-holder">
-                <img src="img/icons/mapmuxing.png" alt="" class="icon">
+                <img src="../acte/img/icons/ai4geo.png" alt="AI4GEO" class="icon">
               </div>
-              <h4 class="heading">MapMuxing</h4>
-              <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="project">
-              <div class="icon-holder">
-                <img src="img/icons/activmap.png" alt="" class="icon">
-              </div>
-              <h4 class="heading">ACTIVmap</h4>
-              <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="project">
-              <div class="icon-holder">
-                <img src="img/icons/timemachine.jpg" alt="" class="icon">
-              </div>
-              <h4 class="heading">TimeMachine</h4>
-              <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
+              <h4 class="heading"><a href="https://www.ai4geo.eu/">AI4GEO</a></h4>
+              <p class="description">
+                <span class="lang-en">Artificial Intelligence for geospatial data</span>
+                <span class="lang-fr">Intelligence artificielle pour les données géospatiales</span>
+                <br>
+                <img src="../acte/img/icons/fr.svg" alt="Français" style="width: 24px;"><b> PIA</b>
+              </p>
             </div>
           </div>
         </div>
@@ -552,6 +546,7 @@
       <div class="cut cut-bottom"></div>
     </section>
 
+    <!--
     <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="other">
