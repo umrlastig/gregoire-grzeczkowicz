@@ -1,4 +1,3 @@
-# firstname-lastname-template
-  
+# gregoire-grzeczkowicz webpage
 
-Template for LASTIG researchers personal webpage.
+Grégoire Grzeczkowicz personal webpage.
