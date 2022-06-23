@@ -128,6 +128,8 @@ var _reviewing4x = function(data, venueList, jobList, parentEl, svg_h, heading){
       .append("a")
       .attr("xlink:href", (d) => (d.url))
       .attr("xlink:title", (d) => (d.description))
+      .attr("xlink:rel", () => ("noopener noreferrer"))
+      .attr("xlink:target", () => ("_blank"))
       .append("rect")
       .attr("x", (d) => (timeScale(timeParser(d.year))-(CVIS.CELL_SIZE)/2))
       .attr("y", (d) => ((venueList.indexOf(d.name)+1)*CVIS.TRACK_HEIGHT-CVIS.CELL_SIZE))
