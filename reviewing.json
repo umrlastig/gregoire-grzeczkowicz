@@ -2,8 +2,9 @@
 "books": [
 ],
  "journals": [
+     {"name": "JSTARS", "year": 2023, "type": "JREW1", "description": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing", "url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4609443"}
 ],
  "conferences": [
-     {"name": "ISPRS", "role": "Reviewer", "year": 2022, "type": "CREW", "description": "24rd ISPRS Congress", "url": "https://www.isprs2022-nice.com"}
+     {"name": "ISPRS", "year": 2022, "type": "CREW", "description": "24rd ISPRS Congress", "url": "https://www.isprs2022-nice.com"}
 ]
 }
