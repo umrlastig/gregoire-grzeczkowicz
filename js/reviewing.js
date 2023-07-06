@@ -21,9 +21,6 @@
 // THE SOFTWARE.
 
 const CVIS = {
-    BOOK_LIST: ["Books"],
-    JOUR_LIST: ["IJGIS", "CaGIS", "TiGIS", "JOSIS", "IJGI", "IJC", "Carto", "Other GIS", "SpatialCog", "IEEE", "ISPRS"],
-    CONF_LIST: ["ISPRS"],
     TIME_INTERVAL: ["2020", "2026"],
     SVG_W: 800,
     TITLE_Y: 26,
@@ -142,9 +139,9 @@ var _reviewing4x = function(data, venueList, jobList, parentEl, svg_h, heading){
 var reviewingVis = function(dataURL){
     d3.json(dataURL).then(
         function(data){
-            _reviewing4x(data.journals, CVIS.JOUR_LIST, LEGENDS.journals, "#revj", 320, "Journals");
-            _reviewing4x(data.conferences, CVIS.CONF_LIST, LEGENDS.conferences, "#revc", 280, "Conferences");
-            _reviewing4x(data.books, CVIS.BOOK_LIST, LEGENDS.books, "#revb", 110, "Books");
+            _reviewing4x(data.journals, [... new Set(data.journals.map(d => d.name))], LEGENDS.journals, "#revj", 320, "Journals");
+            _reviewing4x(data.conferences, [... new Set(data.conferences.map(d => d.name))], LEGENDS.conferences, "#revc", 280, "Conferences");
+            _reviewing4x(data.books, [... new Set(data.books.map(d => d.name))], LEGENDS.books, "#revb", 110, "Books");
         }
     ).catch(function(err){console.log(err);});
 };
